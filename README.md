@@ -1,0 +1,39 @@
+# Micro Radar QEX — Instalador
+
+Rastreador de voos em tempo real para a placa **ESP32 CYD** (ESP32-2432S028R).
+Este repositório contém apenas o **firmware compilado e o instalador** — não é
+preciso VSCode, PlatformIO nem Python para gravar a placa.
+
+## Instalar pelo navegador (recomendado)
+
+👉 **https://rodrigoux.github.io/radar-qex-install/**
+
+Abra no **Chrome** ou no **Edge**, conecte a placa no USB e clique em
+*Conectar e Instalar*. A gravação acontece direto pelo navegador, via Web Serial.
+
+> Firefox e Safari não suportam Web Serial. Nesses casos, use o instalador offline.
+
+## Instalar sem navegador (Windows)
+
+Baixe o [instalador offline](micro_radar_qex_v1.08_instalador.zip), extraia e
+execute `gravar.bat`. Funciona sem internet.
+
+## Depois de gravar
+
+1. Calibre o toque tocando nos cantos indicados na tela.
+2. Conecte-se à rede Wi-Fi **MicroRadar-Setup** que a placa cria.
+3. Escolha a sua rede Wi-Fi na tela que abrir. A placa reinicia.
+4. Abra o IP mostrado na tela para configurar posição do radar, fonte dos dados
+   (OpenSky, adsb.lol ou airplanes.live), clima, cor da tela e mais.
+
+## Conteúdo
+
+| Arquivo | O que é |
+|---|---|
+| `firmware-merged.bin` | Imagem completa (bootloader + partições + aplicação), grava no offset 0x0 |
+| `manifest.json` | Manifesto do ESP Web Tools |
+| `index.html` | Página do instalador web |
+| `micro_radar_qex_v1.08_instalador.zip` | Instalador offline com `esptool.exe` e `gravar.bat` |
+
+O firmware não contém chaves nem credenciais: Wi-Fi e chaves de API são
+configurados pelo usuário e ficam gravados na NVS da placa.
