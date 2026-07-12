@@ -1,4 +1,4 @@
 {
-  "version": "1.12",
-  "notas": "Botao de atualizar o clima"
+  "version": "1.13",
+  "notas": "Mapas multi-parte e cache no SD"
 }
