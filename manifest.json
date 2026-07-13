@@ -1,6 +1,6 @@
 {
   "name": "Micro Radar QEX",
-  "version": "1.14",
+  "version": "1.15",
   "home_assistant_domain": "",
   "new_install_prompt_erase": true,
   "builds": [
