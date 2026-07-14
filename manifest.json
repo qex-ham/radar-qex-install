@@ -1,13 +1,16 @@
 {
   "name": "Micro Radar QEX",
-  "version": "1.16",
+  "version": "1.17",
   "home_assistant_domain": "",
-  "new_install_prompt_erase": true,
+  "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32",
       "parts": [
-        { "path": "firmware-merged.bin", "offset": 0 }
+        { "path": "bootloader.bin", "offset": 4096 },
+        { "path": "partitions.bin", "offset": 32768 },
+        { "path": "boot_app0.bin", "offset": 57344 },
+        { "path": "firmware.bin", "offset": 65536 }
       ]
     }
   ]

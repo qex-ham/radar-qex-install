@@ -1,4 +1,4 @@
 {
-  "version": "1.16",
-  "notas": "Corrige beep continuo e troca de API"
+  "version": "1.17",
+  "notas": "Atualizar nao apaga mais suas configs"
 }
