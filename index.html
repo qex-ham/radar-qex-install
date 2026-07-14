@@ -46,12 +46,44 @@
         .unsupported { color: #ff5555; }
         a { color: #ff0; }
         footer { margin-top: 3rem; color: #046004; font-size: .85rem; }
+
+        .shots {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 1.5rem 0 2rem;
+        }
+        .shots figure { margin: 0; flex: 1; max-width: 15rem; }
+        .shots img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #064006;
+            border-radius: 4px;
+            display: block;
+        }
+        .shots figcaption {
+            text-align: center;
+            font-size: .8rem;
+            margin-top: .4rem;
+            color: #9a9a00;
+        }
     </style>
 </head>
 <body>
 <main>
     <h1>Micro Radar QEX</h1>
     <p class="sub">RASTREADOR DE VOOS - ESP32 CYD - v1.18</p>
+
+    <div class="shots">
+        <figure>
+            <img src="tela-verde.jpg" alt="Radar no tema verde mostrando avioes sobre Sao Paulo" loading="lazy">
+            <figcaption>Tema verde</figcaption>
+        </figure>
+        <figure>
+            <img src="tela-vermelha.jpg" alt="Radar no tema vermelho mostrando avioes sobre Sao Paulo" loading="lazy">
+            <figcaption>Tema vermelho</figcaption>
+        </figure>
+    </div>
 
     <p>
         Grave o firmware direto pelo navegador. Nao precisa instalar VSCode,

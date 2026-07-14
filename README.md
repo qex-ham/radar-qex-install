@@ -4,6 +4,12 @@ Rastreador de voos em tempo real para a placa **ESP32 CYD** (ESP32-2432S028R).
 Este repositório contém apenas o **firmware compilado e o instalador** — não é
 preciso VSCode, PlatformIO nem Python para gravar a placa.
 
+<p align="center">
+  <img src="tela-verde.jpg" alt="Radar no tema verde" width="300">
+  &nbsp;&nbsp;
+  <img src="tela-vermelha.jpg" alt="Radar no tema vermelho" width="300">
+</p>
+
 ## Instalar pelo navegador (recomendado)
 
 👉 **https://rodrigoux.github.io/radar-qex-install/**
@@ -30,12 +36,13 @@ Funciona sem internet.
 
 | Arquivo | O que é |
 |---|---|
-| `firmware-merged.bin` | Imagem completa (bootloader + partições + aplicação), grava no offset 0x0 |
+| `bootloader.bin`, `partitions.bin`, `boot_app0.bin`, `firmware.bin` | As quatro partes do firmware, cada uma gravada no seu endereço (a NVS do usuário fica intacta) |
 | `manifest.json` | Manifesto do ESP Web Tools |
 | `index.html` | Página do instalador web |
 | `micro_radar_qex_v1.18_instalador.zip` | Instalador offline com `esptool.exe` e `gravar.bat` |
 
-O firmware não contém chaves nem credenciais: Wi-Fi e chaves de API são
-configurados pelo usuário e ficam gravados na NVS da placa.
+Atualizar **não apaga** suas configurações: Wi-Fi, calibração e chaves de API
+ficam na NVS e são preservados. (Pela página, deixe a caixa *"Erase device"*
+desmarcada.)
 
 *Firmware v1.18. O código-fonte é mantido em um repositório privado.*
