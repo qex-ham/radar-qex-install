@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Micro Radar QEX - Instalador</title>
-    <script type="module" src="https://unpkg.com/esp-web-tools@10.0.3/dist/web/install-button.js"></script>
+    <!-- Pinned to a version that actually exists. 10.0.3 was never published: unpkg answered 404,
+         the custom element never registered, and the browser rendered every <slot> at once - which
+         looked exactly like "your browser doesn't support Web Serial", in a browser that does. -->
+    <script type="module" src="https://unpkg.com/esp-web-tools@10.3.0/dist/web/install-button.js"></script>
     <style>
         :root { color-scheme: dark; }
         body {
