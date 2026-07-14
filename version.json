@@ -1,4 +1,4 @@
 {
-  "version": "1.17",
-  "notas": "Atualizar nao apaga mais suas configs"
+  "version": "1.18",
+  "notas": "Instalador web nao apaga mais as configs"
 }
