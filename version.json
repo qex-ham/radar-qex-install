@@ -1,4 +1,4 @@
 {
-  "version": "1.15",
-  "notas": "Volume e tom do beep ajustaveis"
+  "version": "1.16",
+  "notas": "Corrige beep continuo e troca de API"
 }
