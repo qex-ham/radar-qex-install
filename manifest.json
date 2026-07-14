@@ -2,7 +2,7 @@
   "name": "Micro Radar QEX",
   "version": "1.18",
   "home_assistant_domain": "",
-  "new_install_prompt_erase": false,
+  "new_install_prompt_erase": true,
   "builds": [
     {
       "chipFamily": "ESP32",
