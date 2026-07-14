@@ -76,6 +76,16 @@
         </esp-web-install-button>
     </div>
 
+    <script>
+        // The manifest is fetched by the component when the user CLICKS, long after the page has
+        // loaded - so a hard refresh never touches it, and the browser happily serves a stale copy.
+        // That is not a cosmetic problem: a manifest published with the wrong erase flag stayed
+        // cached and kept wiping people's WiFi and settings even after the file was fixed on the
+        // server. A per-load timestamp makes the URL unique, so this can never happen again.
+        document.querySelector('esp-web-install-button')
+                .setAttribute('manifest', 'manifest.json?t=' + Date.now());
+    </script>
+
     <h2>Como instalar</h2>
     <ol>
         <li>Conecte a placa CYD ao computador com um cabo USB <strong>de dados</strong>
