@@ -1,6 +1,10 @@
 # Micro Radar QEX — Instalador
 
-Rastreador de voos em tempo real para a placa **ESP32 CYD** (ESP32-2432S028R).
+Rastreador de voos em tempo real para a placa **ESP32 CYD**, nas duas telas:
+**2.8"** (ESP32-2432S028R) e **3.5"** (ESP32-3248S035R, variante R de toque
+resistivo). É o mesmo firmware para as duas — não há versão separada nem nada a
+escolher, a placa é reconhecida sozinha quando liga.
+
 Este repositório contém apenas o **firmware compilado e o instalador** — não é
 preciso VSCode, PlatformIO nem Python para gravar a placa.
 
@@ -21,7 +25,7 @@ Abra no **Chrome** ou no **Edge**, conecte a placa no USB e clique em
 
 ## Instalar sem navegador (Windows)
 
-Baixe o [instalador offline](micro_radar_qex_v1.19_instalador.zip), extraia e execute `gravar.bat`.
+Baixe o [instalador offline](micro_radar_qex_v1.20_instalador.zip), extraia e execute `gravar.bat`.
 Funciona sem internet.
 
 ## Depois de gravar
@@ -39,10 +43,10 @@ Funciona sem internet.
 | `bootloader.bin`, `partitions.bin`, `boot_app0.bin`, `firmware.bin` | As quatro partes do firmware, cada uma gravada no seu endereço (a NVS do usuário fica intacta) |
 | `manifest.json` | Manifesto do ESP Web Tools |
 | `index.html` | Página do instalador web |
-| `micro_radar_qex_v1.19_instalador.zip` | Instalador offline com `esptool.exe` e `gravar.bat` |
+| `micro_radar_qex_v1.20_instalador.zip` | Instalador offline com `esptool.exe` e `gravar.bat` |
 
 Atualizar **não apaga** suas configurações: Wi-Fi, calibração e chaves de API
 ficam na NVS e são preservados. (Pela página, deixe a caixa *"Erase device"*
 desmarcada.)
 
-*Firmware v1.19. O código-fonte é mantido em um repositório privado.*
+*Firmware v1.20. O código-fonte é mantido em um repositório privado.*
