@@ -16,7 +16,7 @@ preciso VSCode, PlatformIO nem Python para gravar a placa.
 
 ## Instalar pelo navegador (recomendado)
 
-👉 **https://rodrigoux.github.io/radar-qex-install/**
+👉 **https://qex-ham.github.io/radar-qex-install/**
 
 Abra no **Chrome** ou no **Edge**, conecte a placa no USB e clique em
 *Conectar e Instalar*. A gravação acontece direto pelo navegador, via Web Serial.
