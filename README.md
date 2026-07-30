@@ -25,7 +25,7 @@ Abra no **Chrome** ou no **Edge**, conecte a placa no USB e clique em
 
 ## Instalar sem navegador (Windows)
 
-Baixe o [instalador offline](micro_radar_qex_v1.21_instalador.zip), extraia e execute `gravar.bat`.
+Baixe o [instalador offline](micro_radar_qex_v1.22_instalador.zip), extraia e execute `gravar.bat`.
 Funciona sem internet.
 
 ## Depois de gravar
@@ -43,10 +43,10 @@ Funciona sem internet.
 | `bootloader.bin`, `partitions.bin`, `boot_app0.bin`, `firmware.bin` | As quatro partes do firmware, cada uma gravada no seu endereço (a NVS do usuário fica intacta) |
 | `manifest.json` | Manifesto do ESP Web Tools |
 | `index.html` | Página do instalador web |
-| `micro_radar_qex_v1.21_instalador.zip` | Instalador offline com `esptool.exe` e `gravar.bat` |
+| `micro_radar_qex_v1.22_instalador.zip` | Instalador offline com `esptool.exe` e `gravar.bat` |
 
 Atualizar **não apaga** suas configurações: Wi-Fi, calibração e chaves de API
 ficam na NVS e são preservados. (Pela página, deixe a caixa *"Erase device"*
 desmarcada.)
 
-*Firmware v1.21. O código-fonte é mantido em um repositório privado.*
+*Firmware v1.22. O código-fonte é mantido em um repositório privado.*
